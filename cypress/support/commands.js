@@ -158,7 +158,7 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', (data = {}) => {
       .should('be.visible')
       .should('have.value', message)
 
-    cy.get('.button')
+    cy.contains('.button', 'Enviar')
       .should('be.visible')
       .click()
 })
